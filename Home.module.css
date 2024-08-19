@@ -1,0 +1,469 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Lobster&family=Playwrite+AR:wght@100..400&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Lobster&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playwrite+AR:wght@100..400&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Open+Sans:wght@400;600&family=Roboto:wght@400;500&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css');
+
+html, body {
+  height: 100%;
+  margin: 0;
+  width:100%;
+
+}
+
+.mainhome {
+  margin: 0;
+  padding: 0;
+  min-height: 300vh;
+  height: 100%;
+  width:100%;
+  overflow-x:hidden;
+  font-family: 'Poppins', sans-serif;
+  background: rgb(0,0,0);
+background: linear-gradient(34deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 86%);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: white;
+}
+
+.homeContainer {
+  height: 100%;
+  flex:1;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Navbar styling */
+.navbar {
+  display: flex;
+  border-bottom: 1px solid #444;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background: transparent;
+  width: 100%;
+  box-sizing: border-box;
+  position: relative;
+  z-index: 1000;
+}
+
+/* Logo styling */
+.logo {
+  font-family: 'Dancing Script', cursive;
+  font-size: 34px;
+  color: white;
+}
+
+/* Navigation links container styling */
+.navLinksContainer {
+  display: flex;
+  justify-content: center;
+  flex: 1;
+}
+
+/* Navigation links styling */
+.navLinks {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+.navLinks li {
+  display: inline;
+}
+
+.navLinks a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  transition: color 0.3s;
+}
+
+.navLinks a:hover {
+  color: #ccc;
+}
+
+/* Sign-in button styling */
+.signInBtn {
+  border: 1px solid white;
+  padding: 8px 16px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.signInBtn:hover {
+  background-color: white;
+  color: black;
+}
+
+/* Section styling */
+.section {
+  padding: 100px 20px;
+  text-align: center;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Hero section styling */
+.heroSection {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh;
+  box-sizing: border-box;
+}
+
+.heroContent {
+  
+  padding: 20px;
+  text-align: left;
+}
+
+.heroTitle {
+  font-size: 80px;
+  margin-bottom: 20px;
+  text-align: left;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.heroSubtitle {
+  font-size: 20px;
+  margin-bottom: 40px;
+  text-align: left;
+  font-family: "Exo 2", sans-serif;
+}
+
+.glassmorphicButton {
+  padding: 12px 24px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 8px;
+  color: white;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.glassmorphicButton:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+/* Social icons container styling */
+.socialIconsContainer {
+  position: relative; /* Ensure it’s in the normal document flow */
+  z-index: 10; /* Higher z-index to be in front */
+  display: flex;
+  justify-content: flex-end; /* Align icons to the right */
+  align-items: center; /* Vertically center icons */
+  padding: 20px;
+}
+.socialIcons {
+  display: flex;
+  flex-direction: column; /* Stack icons vertically */
+  gap: 20px; /* Space between icons */
+}
+
+.socialIcon {
+  color: white;
+  font-size: 24px;
+  transition: color 0.3s;
+  display:inline-block;
+}
+
+.socialIcon:hover {
+  color: #ccc;
+}
+
+/* Hero image styling */
+.heroImage {
+  width: 700px; /* Adjust size as needed */
+  height: 500px;
+  position: absolute; /* Positioning the image separately */
+  top: 10%; /* Adjust top position */
+  right: -1%;
+  left: 55%; /* Adjust right position */
+}
+
+/* General section styling */
+.sectionContent {
+  max-width: 800px;
+  margin: 0 auto;
+}
+/* General styling for combinedContainer */
+.combinedContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+/* Combined content section styling */
+.combinedContent {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 250px; /* Ensure max-width is consistent with other boxes */
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: background 0.3s, box-shadow 0.3s;
+}
+
+/* Ensure combinedContent sections don’t exceed container width */
+
+.combinedContent p {
+  font-family: 'Exo 2', sans-serif;
+  font-size: 16px;
+  color: #ccc;
+  margin-bottom: 20px;
+}
+
+
+/* Tags section styling */
+.combinedTags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center; /* Center the tags */
+}
+
+.tag {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  max-width: 250px; /* Ensure max-width is consistent with other boxes */
+  text-align: left;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: background 0.3s, box-shadow 0.3s;
+}
+
+.tag h2 {
+  margin: 0 0 10px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.tag h3 {
+  margin: 0 0 10px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.tag p {
+  margin: 0;
+  font-family: 'Exo 2', sans-serif;
+  font-size: 16px;
+  color: #ccc;
+}
+
+.tag:hover {
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+
+.tag h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.membershipContainer {
+  padding: 60px 20px;
+  color: #fff;
+  text-align: center; /* Center text */
+}
+
+.membershipHeader h2 {
+  font-size: 36px; /* Adjust font size as needed */
+  margin-bottom: 20px;
+  font-weight: bold; /* Make the header bold */
+}
+
+.membershipContent {
+  text-align: center; /* Ensure text is centered */
+}
+
+.membershipDescription {
+  font-size: 18px; /* Adjust font size as needed */
+  margin-bottom: 40px; /* Space below the description */
+  line-height: 1.6; /* Improve readability */
+  max-width: 800px; /* Limit the width for better readability */
+  margin-left: auto;
+  margin-right: auto; /* Center the description */
+}
+
+.membershipLevels {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.level {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 0; /* sharp edges */
+  max-width: 250px;
+  text-align: left; /* Align text to the left for levels */
+}
+
+.level h3 {
+  font-size: 24px; /* Adjust font size as needed */
+  margin-bottom: 10px;
+  font-weight: bold; /* Make the sub-headers bold */
+}
+
+.level p {
+  font-size: 16px; /* Adjust font size as needed */
+  line-height: 1.5; /* Improve readability */
+}
+/* Social Icons Styles */
+.socialIcons2 {
+  display: flex;
+  gap: 20px;
+  margin-top: 20px;
+  justify-content: center;
+  flex-direction: column; 
+}
+
+.socialIcons {
+  color: black;
+  font-size: 24px;
+  flex-direction: column; 
+  transition: color 0.3s ease-in-out;
+}
+
+.socialIcon:hover {
+  color: #ccc;
+}
+
+.footer {
+  background-color: #fff;
+  color: #000;
+  padding: 40px 20px;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  margin-top: auto; 
+  width: 100%;
+}
+
+.footerContent {
+  display: flex;
+  justify-content: space-around;
+  padding-right:200px;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.footerSection {
+  max-width: 300px;
+  font-family: 'Lora', serif;
+}
+
+.footerSection h3 {
+  font-size: 20px;
+  margin-bottom: 15px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+}
+
+.footerSection p,
+.footerSection ul {
+  font-size: 16px;
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.5;
+}
+
+.footerSection ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footerSection li {
+  margin-bottom: 10px;
+}
+
+.footerSection li a {
+  color: #000;
+  text-decoration: none;
+  transition: color 0.3s;
+  font-family: 'Roboto', sans-serif;
+}
+
+.footerSection li a:hover {
+  color: #007bff;
+}
+
+.footerBottom {
+  margin-top: 20px;
+  border-top: 1px solid #ccc;
+  padding-top: 20px;
+  font-size: 14px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.userMenu {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.profileImage {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.username {
+  margin-right: 10px;
+}
+
+.dropdownButton {
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.dropdownMenu {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background: #333;
+  color: white;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.dropdownMenu button {
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  padding: 5px;
+  text-align: left;
+}
+
+.dropdownMenu button:hover {
+  background: #555;
+}
+.signOutBtn {
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  padding: 8px 16px;
+  font-size: 16px;
+}
+
+.signOutBtn:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
